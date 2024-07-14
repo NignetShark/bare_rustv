@@ -1,0 +1,8 @@
+#################################################
+# Global configuration
+#################################################
+
+[build]
+target = "riscv32i-unknown-none-elf"          # Targeting RISCV
+rustflags = ['-Clink-arg=-Tsrc/lds/virt.lds'] # Linker script for memory mapping
+
